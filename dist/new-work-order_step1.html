@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Заказ-наряды</title>
+
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/resp.css" rel="stylesheet" type="text/css">
+    <!--[if IE]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+</head>
+
+<body>
+    <div class="container lkContainer  middle">
+        <div class="pagetitle">Заказ-наряды</div>
+        <div class="row">
+            <div class="grid3 tb12">
+                <div class="lknav">
+                    <div class="lknav_row"><a href="repair-request.html">Заявки</a></div>
+                    <div class="lknav_row"><a href="work-order.html">Заказ-наряды</a></div>
+                    <div class="lknav_row"><a href="available-equipment.html">Доступное оборудование</a></div>
+                </div><!-- #lknav -->
+            </div><!-- #grid3 -->
+            <div class="grid9 tb12">
+                <ul class="newsteps">
+                    <li><a href="new-work-order_step1.html" class="active">1. Данные клиента</a></li>
+                    <li><a href="new-work-order_step2.html">2. Оборудование</a></li>
+                    <li><a href="new-work-order_step3.html">3. Услуги</a></li>
+                    <li><a href="new-work-order_step4-1-1.html">4. Подтверждение</a></li>
+                </ul>
+                <div class="newOrderForm">
+                    <form action="#" method="post">
+                        <div class="frow">
+                            <div class="input_name">
+                                <span>ФИО</span>
+                                <input type="text" value="Кивенко Дмитрий" name="name" disabled>
+                            </div>
+                        </div>
+                        <div class="frow">
+                            <input type="tel" class="input phone_input" placeholder="Телефон" maxlength="15" name="phone">
+                        </div>
+                        <div class="frow">
+                            <input type="email" class="input" placeholder="E-mail" name="email">
+                        </div>
+                        <div class="frow">
+                            <input type="submit" class="btn btn-lg btn-red" disabled value="Продолжить">
+                        </div>
+                    </form>
+                </div><!-- #newOrderForm -->
+            </div><!-- #grid9 -->
+        </div><!-- #row -->
+    </div><!-- #container -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.2.0/js/ion.rangeSlider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-placeholder/2.3.1/jquery.placeholder.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

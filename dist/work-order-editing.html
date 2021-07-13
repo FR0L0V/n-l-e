@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Заказ-наряды</title>
+
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/resp.css" rel="stylesheet" type="text/css">
+    <!--[if IE]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+</head>
+
+<body>
+    <div class="container lkContainer middle">
+
+        <div class="pagetitle">Заказ-наряды</div>
+        <div class="row">
+            <div class="grid3 tb12">
+                <div class="lknav">
+                    <div class="lknav_row"><a href="repair-request.html">Заявки</a></div>
+                    <div class="lknav_row"><a href="work-order.html">Заказ-наряды</a></div>
+                    <div class="lknav_row"><a href="available-equipment.html">Доступное оборудование</a></div>
+                </div><!-- #lknav -->
+            </div><!-- #grid3 -->
+            <div class="grid9 tb12">
+
+                <div class="page_subtitle">Информация о доствке</div>
+                <form action="#" method="post">
+                    <div class="ordertab lkordertab lkordertab_white">
+                        <div class="ordertab_tr_header">
+                            <div class="ordertab_cl ">Номер</div>
+                            <div class="ordertab_cl ">Дата</div>
+                            <div class="ordertab_cl ">Клиент</div>
+                            <div class="ordertab_cl">Тип работ</div>
+                            <div class="ordertab_cl">Сумма</div>
+                            <div class="ordertab_cl">Статус</div>
+                        </div>
+                        <div class="ordertab_tr">
+                            <div class="ordertab_cl">
+                                <div class="ordertab_tr_header_mob">Номер: </div>
+                                1231333
+                            </div>
+                            <div class="ordertab_cl">
+                                <div class="ordertab_tr_header_mob">Дата: </div>
+                                12.06.2021
+                            </div>
+                            <div class="ordertab_cl">
+                                <div class="ordertab_tr_header_mob">Клиент: </div>
+                                Иванов Александр Александрович
+                            </div>
+                            <div class="ordertab_cl">
+                                <div class="ordertab_tr_header_mob">Тип работ: </div>
+                                Установка
+                            </div>
+                            <div class="ordertab_cl">
+                                <div class="ordertab_tr_header_mob">Сумма: </div>
+                                4 906 руб
+                            </div>
+                            <div class="ordertab_cl">
+                                <div class="ordertab_tr_header_mob">Статус: </div>
+                                Выполнено
+                            </div>
+                        </div>
+                    </div><!-- #ordertab -->
+
+                    <div class="ordertab lkordertab lkordertab_white">
+                        <div class="ordertab_tr_header">
+                            <div class="ordertab_cl">Комментарий</div>
+                        </div>
+                        <div class="ordertab_tr">
+                            <div class="ordertab_cl ordertab_cl_comment">
+                                <div class="ordertab_tr_header_mob">Комментарий: </div>
+                                Здесь выводится вся дополнительная информация о заявке.
+                            </div>
+                        </div>
+                    </div><!-- #ordertab -->
+
+                    <div class="page_subtitle">Данные клиента</div>
+
+                    <div class="newOrderForm">
+                        <div class="frow">
+                            <div class="input_name">
+                                <span>ФИО</span>
+                                <input type="text" value="Кивенко Дмитрий" name="name" disabled>
+                            </div>
+                        </div>
+                        <div class="frow">
+                            <input type="tel" class="input phone_input" placeholder="Телефон" maxlength="15"
+                                name="phone">
+                        </div>
+                        <div class="frow">
+                            <input type="email" class="input" placeholder="E-mail" name="email">
+                        </div>
+                    </div>
+
+                    <div class="page_subtitle">Товары</div>
+
+                    <div class="search">
+                        <form action="#" method="post">
+                            <input type="text" name="search" class="search_input" placeholder="Поиск по каталогу">
+                        </form>
+                    </div><!-- #search -->
+
+                    <div class="tagRow grid12 tb12 service-buttons">
+                        <a href="#" class="tag">Комплекты Триколор ТВ</a>
+                        <a href="#" class="tag">Кабели и шнуры</a>
+                        <a href="#" class="tag">Кронштейны и полки</a>
+                        <a href="#" class="tag">Интернет</a>
+                        <a href="#" class="tag">Эфирное ТВ</a>
+                    </div><!-- #tagsRow -->
+
+                    <div class="catalogListTab">
+                        <div class="catalogListTab_tr">
+                            <div class="catalogListTab_cl">
+                                <div class="catalogListTab_tr_header_mob">Наименование: </div>
+                                <div class="catalogListTab_min">
+                                    <div class="catalogListTab_min_img">
+                                        <a href="product.html">
+                                            <img src="./images/Rectangle 14.png" alt>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <h4>
+                                            Саундбар CADENA B802
+                                        </h4>
+                                        B802 1 0
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalogListTab_cl">
+                                <div class="catalogListTab_tr_header_mob">Свободно: </div>
+                                <div class="availableQuantity">
+                                    <span>1 шт.</span>
+                                </div>
+                            </div>
+                            <div class="catalogListTab_cl catalogListTab_price text-right catalogListTab_cl_right">
+                                <div class="catalogListTab_tr_header_mob">Цена: </div>
+                                3 760 руб.
+                            </div>
+                            <div class="catalogListTab_cl text-right">
+                                <div class="catalogListTab_tr_header_mob">Количество: </div>
+                                <div>
+                                    <input type="number" class="number" value="1" min="1">
+                                </div>
+                            </div>
+                            <div class="catalogListTab_cl catalogListTab_price text-right">
+                                <div class="catalogListTab_tr_header_mob">Стоимость: </div>
+                                3 760 руб.
+                            </div>
+                            <div class="catalogListTab_cl text-right catalogListTab_cl_last">
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" name="" value="">
+                                    <span></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div><!-- #catalogListTab -->
+
+                    <div class="catalogListPagination pagination">
+                        <div class="pagination_pages">
+                            <span>1</span>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <span class="more">...</span>
+                        </div>
+                        <div class="pagsel">
+                            <div class="jq-selectbox">
+                                <a href="#" class="jq-selectbox__select">Показать все</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--#catalogListPagination-->
+
+                    <div class="page_subtitle">Услуги</div>
+
+                    <div class="search">
+                        <form action="#" method="post">
+                            <input type="text" name="search" class="search_input" placeholder="Поиск по каталогу">
+                        </form>
+                    </div><!-- #search -->
+
+                    <div class="catalogListTab">
+                        <div class="catalogListTab_tr">
+                            <div class="catalogListTab_cl">
+                                <div class="catalogListTab_tr_header_mob">Услуга: </div>
+                                <div class="catalogListTab_min">
+                                    <div>
+                                        <h4>
+                                            Наименование услуги
+                                        </h4>
+                                        Артикул услуги
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalogListTab_cl">
+                                <div class="catalogListTab_tr_header_mob">Количество: </div>
+                                <div class="availableQuantity">
+                                    <span>1 шт.</span>
+                                </div>
+                            </div>
+                            <div class="catalogListTab_cl catalogListTab_price text-right catalogListTab_cl_right_48">
+                                <div class="catalogListTab_tr_header_mob">Стоимость: </div>
+                                3 760 руб.
+                            </div>
+                            <div class="catalogListTab_cl text-right catalogListTab_cl_last">
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" name="" value="">
+                                    <span></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div><!-- #catalogListTab -->
+
+                    <div class="total_cost text-right">
+                        <div class="total_cost_header text-right">
+                            Итоговая сумма
+                        </div>
+                        <div class="total_cost_body text-right">
+                            4 030 руб.
+                        </div>
+                    </div>
+                    <!--#total_cost-->
+                    <div class="service-buttons text-right">
+                        <input type="submit" href="#" class="btn btn-red btn-lg" value="Сохранить">
+                    </div><!-- #service-buttons -->
+                </form>
+            </div><!-- #grid9 -->
+        </div><!-- #row -->
+    </div><!-- #container -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.2.0/js/ion.rangeSlider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-placeholder/2.3.1/jquery.placeholder.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
