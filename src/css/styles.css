@@ -6485,8 +6485,12 @@ body.spinner_on {
 
 
 /*************/
- /*styles for */
+ /*styles for lk*/
  /*************/
+
+.mar_top20{
+  margin-top:20px;
+}
 
  /*lkContainer*/
  .lkContainer{
@@ -6526,6 +6530,10 @@ body.spinner_on {
   font-size: 13px;
   line-height: 15px;
   color: #4F4F4F;
+}
+
+.lkordertab .ordertab_cl a:hover{
+  color: #f20f2a;
 }
 
 .lkordertab .ordertab_cl{ 
@@ -6691,7 +6699,7 @@ body.spinner_on {
   width: 13px;
   height: 10px;
   left: -20px;
-  top: 4px;
+  top: 1px;
 }
 
 .catalogListTab_min{
@@ -6701,12 +6709,19 @@ body.spinner_on {
  
 }
 
-.catalogListTab_min h4{
+.catalogListTab_min h4, .catalogListTab_min h4 a{
   font-weight: 900;
   font-size: 14px;
   line-height: 16px;
   color: #000000;
   margin-bottom:4px;
+  text-transform: none;
+  text-decoration:none;
+}
+
+.catalogListTab_min h4 a:hover{
+  color:#F20F2A;
+  text-decoration: underline;
 }
 
 .catalogListTab_min_img{
@@ -6772,29 +6787,10 @@ body.spinner_on {
   margin-bottom:10px;
 }
 
-.newOrderForm .input, .newOrderForm .input_name{
+.newOrderForm .input, .newOrderForm .input_name .input-box{
   background: #F1F1F1;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
   border-radius: 3px;
-  font-size: 12px;
-  line-height: 14px;
-}
-
-.newOrderForm .input_name input{
-  display:block;
-  background:none;
-  border:none;
-  color: #000000;
-  font-size: 12px;
-  line-height: 14px;
-}
-
-.newOrderForm .input_name span{
-  margin-top:9px;
-  margin-bottom:3px;
-  font-size: 8px;
-  line-height: 9px;
-  color: #555555;
 }
 
 .newOrderForm .input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -6811,7 +6807,6 @@ body.spinner_on {
 }
 
 .newOrderForm .input_name{
-  padding:9px 10px;
   width:395px;
 }
 
@@ -6848,10 +6843,17 @@ body.spinner_on {
 }
 
 .lkContainer .jq-number__spin.minus::after, .lkContainer .jq-number__spin.plus::after {
+  position:absolute;
+  top:2px;
+  left:6px;
   color: #000000;
   font-size: 18px;
   line-height: 21px;
   font-weight: normal;
+}
+
+.lkContainer .jq-number__field input {
+  font-size:14px;
 }
 
 .lkContainer .jq-number__spin.minus{
