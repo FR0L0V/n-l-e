@@ -6680,6 +6680,16 @@ body.spinner_on {
   border-top: 1px solid #F0F0F0;
 }
 
+.catalogListTab .input-wrap{
+  margin-top:20px;
+}
+
+.catalogListTab .input-wrap h3{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
 .availableQuantity{
   width:54px;
 }
