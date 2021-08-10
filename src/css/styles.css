@@ -6680,14 +6680,22 @@ body.spinner_on {
   border-top: 1px solid #F0F0F0;
 }
 
-.catalogListTab .input-wrap{
-  margin-top:20px;
+.describe-comment{
+  margin-top:-20px;
+  width:100%;
+  padding:10px;
+  margin-bottom:20px;
+  background: #F2F2F2;
 }
 
-.catalogListTab .input-wrap h3{
+.describe-comment h3{
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
+}
+
+.describe-comment .input-wrap{
+  width: 336px;
 }
 
 .availableQuantity{
@@ -7115,6 +7123,10 @@ body.spinner_on {
 
   .catalogListTab_min_img{
     margin-right:5px;
+  }
+
+  .describe-comment .input-wrap{
+    width: 100%;
   }
 
   .availableQuantity{
