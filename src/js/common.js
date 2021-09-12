@@ -387,4 +387,39 @@ $(document).ready(function() {
 	$('.get_price_row.spinner_row').append('<div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>');
 
 
+
+	//lkContainer file-loader
+	let $fileInput = $('.file-input'),
+	$droparea = $('.file-drop-area'),
+	$fakeBtn = $('.fake-btn'),
+	$fileMsg = $('.file-msg'),
+	$closeBtn = $('.close-btn');
+
+	$fileInput.on('change', ()=>{
+		$fileMsg.text($fileInput[0].files[0].name);
+		$fakeBtn.addClass('files-loaded');
+		$closeBtn.removeClass('hide');
+		$fileInput.addClass('hide');
+	});
+
+	$closeBtn.on('click', ()=>{
+		$fileInput[0].files[0] = {};
+		$fileMsg.text('Выбрать файл');
+		$closeBtn.addClass('hide');
+		$fileInput.removeClass('hide');
+		$fakeBtn.removeClass('files-loaded');
+	})
+
+	$fileInput.on('dragover',()=>{
+		$droparea.addClass('active-field');
+	})
+
+	$fileInput.on('dragleave',()=>{
+		$droparea.removeClass('active-field');
+	})
+
+	$fileInput.on('drop',()=>{
+		$droparea.removeClass('active-field');
+	})
+
 });
