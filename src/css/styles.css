@@ -6785,6 +6785,7 @@ body.spinner_on {
   background: #E0E0E0;
   border-radius: 50px;
   border:none;
+  margin-top: 1px;
 }
 
 .catalogListPagination .pagination_pages .more{
@@ -7148,6 +7149,27 @@ input[type=file]::-webkit-file-upload-button { /* chromes and blink button */
   display:none;
 } 
 
+.input-prompt{
+  padding-left:10px;
+  margin-top:5px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #555555;
+}
+
+.input-title{
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+  margin-bottom:10px;
+}
+
+.newOrderForm .frow .input{
+  width:245px;
+}
+
+
+
 @media screen and (max-width: 1200px){
   .catalogListTab_cl_width300{
     max-width:200px;
@@ -7176,6 +7198,9 @@ input[type=file]::-webkit-file-upload-button { /* chromes and blink button */
   }
 
   .newOrderForm .frow .input-wrap{
+    width:100%;
+  }
+  .newOrderForm .frow .input{
     width:100%;
   }
 }
