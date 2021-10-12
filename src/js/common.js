@@ -422,4 +422,12 @@ $(document).ready(function() {
 		$droparea.removeClass('active-field');
 	})
 
+
+
+	$field = $('.jq-number__field .number');
+	$checkInputValue = () =>{
+		if(+$field[0].value < +$field[0].min) $field[0].value=$field[0].min;
+		if(+$field[0].value > +$field[0].max) $field[0].value=$field[0].max;
+	}
+	$field.on('blur', $checkInputValue)
 });
