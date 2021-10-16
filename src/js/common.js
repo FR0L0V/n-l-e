@@ -430,4 +430,10 @@ $(document).ready(function() {
 		if(+$field[0].value > +$field[0].max) $field[0].value=$field[0].max;
 	}
 	$field.on('blur', $checkInputValue)
+
+	//aligning cells in a table .catalogListTab.selected
+    $catalogListTab_Selected_firstCell = $('.selected .catalogListTab_tr .catalogListTab_cl:first-child')
+	$catalogListTab_NotSelected_firstCell = $('.not-selected .catalogListTab_tr .catalogListTab_cl:first-child')
+	$width=$catalogListTab_NotSelected_firstCell.width();
+	$catalogListTab_Selected_firstCell.width($width);
 });

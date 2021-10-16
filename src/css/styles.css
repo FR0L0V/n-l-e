@@ -6690,6 +6690,8 @@ body.spinner_on {
   border-top: 1px solid #F0F0F0;
 }
 
+
+
 .describe-comment{
   width:100%;
   padding:10px;
@@ -7331,6 +7333,7 @@ input[type=file]::-webkit-file-upload-button { /* chromes and blink button */
   }
 
   .lkordertab .ordertab_cl{
+    min-height: 15px;
     text-align: right;
     padding:0;
   }
