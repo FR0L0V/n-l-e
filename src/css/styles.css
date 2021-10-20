@@ -4328,8 +4328,34 @@ input.btn-sm, button.btn-sm {
   .ordertab_cl.ordertab_prelast {
     border: 0 !important;
     margin: 0 !important;
-    padding: 0 !important; } }
+    padding: 0 !important; } 
+  
+    .ordertab_linear_mob{
+      display:table !important;
+      width:100% !important;
+      margin:0 !important;
+    }
+ 
+    .ordertab_linear_mob .ordertab_tr{
+      display:table-row !important;
+    }
+ 
+    .ordertab_linear_mob .ordertab_cl{
+      display:table-cell !important;
+      padding:10px 0 !important;
+      text-align: center;
+      border-bottom:none !important;
+    }
 
+    .ordertab_linear_mob .ordertab_tr .ordertab_cl:first-child{
+      max-width: 50px !important;
+      overflow: hidden;
+      text-overflow: ellipsis !important;
+    }
+  }
+
+ 
+   
 /* For partners */
 .partrow {
   margin: 0 -7px 40px; }
@@ -6607,6 +6633,11 @@ body.spinner_on {
   margin-bottom:20px;
 }
 
+.catalogListTab.selected .catalogListTab_tr .catalogListTab_cl:first-child,
+.catalogListTab.not-selected .catalogListTab_tr .catalogListTab_cl:first-child{
+  width:70%;
+}
+
 .catalogListTab_cl_right{
   width:25%;
 }
@@ -7148,7 +7179,7 @@ input[type=file]::-webkit-file-upload-button { /* chromes and blink button */
 }
 
 .hide{
-  display:none;
+  display:none !important;
 } 
 
 .input-prompt{
@@ -7214,6 +7245,12 @@ input[type=file]::-webkit-file-upload-button { /* chromes and blink button */
   }
 
   /* catalogListTab */
+
+  .catalogListTab.selected .catalogListTab_tr .catalogListTab_cl:first-child,
+  .catalogListTab.not-selected .catalogListTab_tr .catalogListTab_cl:first-child{
+    width:100%;
+  }
+
   .catalogListTab_tr_header {
     display:none;
   }

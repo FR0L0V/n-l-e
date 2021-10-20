@@ -421,19 +421,17 @@ $(document).ready(function() {
 	$fileInput.on('drop',()=>{
 		$droparea.removeClass('active-field');
 	})
-
-
-
-	$field = $('.jq-number__field .number');
-	$checkInputValue = () =>{
-		if(+$field[0].value < +$field[0].min) $field[0].value=$field[0].min;
-		if(+$field[0].value > +$field[0].max) $field[0].value=$field[0].max;
-	}
-	$field.on('blur', $checkInputValue)
-
-	//aligning cells in a table .catalogListTab.selected
-    $catalogListTab_Selected_firstCell = $('.selected .catalogListTab_tr .catalogListTab_cl:first-child')
-	$catalogListTab_NotSelected_firstCell = $('.not-selected .catalogListTab_tr .catalogListTab_cl:first-child')
-	$width=$catalogListTab_NotSelected_firstCell.width();
-	$catalogListTab_Selected_firstCell.width($width);
+	
 });
+
+$('body').on('blur', '.jq-number__field .number', (e) =>{
+	if(+e.target.value < +e.target.min) e.target.value=e.target.min;
+	if(+e.target.value > e.target.max) e.target.value=e.target.max;
+})
+
+$(document).ajaxComplete(()=>{
+	$catalogPriceCell=$('.catalogListTab_price');
+	$catalogPriceCell.each($i=>{
+		if(!$catalogPriceCell[$i].innerText.substring(11)) $catalogPriceCell[$i].classList.add('hide')
+	})
+})
