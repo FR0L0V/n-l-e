@@ -6798,6 +6798,7 @@ body.spinner_on {
   font-size: 16px;
   line-height: 19px;
   color: #000000;
+  white-space: nowrap;
 }
 
 .catalogListPagination .pagination_pages{
@@ -6841,11 +6842,12 @@ body.spinner_on {
 
 /*newOrderForm*/
 .newOrderForm{
-  padding:0 15px;
+  padding:0;
 }
 
 .newOrderForm .frow{
   margin-bottom:10px;
+  margin-left:0px;
 }
 
 .newOrderForm .input, 
@@ -7379,6 +7381,10 @@ input[type=file]::-webkit-file-upload-button { /* chromes and blink button */
     width:auto;
   }
 
+  .lkordertab .ordertab_cl_status{
+    white-space: nowrap;
+  }
+
   .ordertab_tr_header_mob{
     display:inline;
     float:left;
@@ -7415,4 +7421,6 @@ input[type=file]::-webkit-file-upload-button { /* chromes and blink button */
 
 }
 
-
+#workorder-service-list{
+  margin-left:0px !important;
+}
