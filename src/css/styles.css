@@ -6635,7 +6635,7 @@ body.spinner_on {
 
 .catalogListTab.selected .catalogListTab_tr .catalogListTab_cl:first-child,
 .catalogListTab.not-selected .catalogListTab_tr .catalogListTab_cl:first-child{
-  width:70%;
+  width:56vh;
 }
 
 .catalogListTab_cl_right{
@@ -7281,6 +7281,7 @@ input[type=file]::-webkit-file-upload-button { /* chromes and blink button */
     font-size: 11px;
     line-height: 13px;
     color: #828282;
+    padding-right: 5px;
     }
 
   .catalogListTab_tr .catalogListTab_cl_last{
@@ -7421,6 +7422,7 @@ input[type=file]::-webkit-file-upload-button { /* chromes and blink button */
 
 }
 
-#workorder-service-list{
+#workorder-service-list,
+#workorder-equipment-list{
   margin-left:0px !important;
 }
