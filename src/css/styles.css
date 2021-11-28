@@ -6848,6 +6848,7 @@ body.spinner_on {
 .newOrderForm .frow{
   margin-bottom:10px;
   margin-left:0px;
+  margin-right:0px;
 }
 
 .newOrderForm .input, 
@@ -7242,6 +7243,16 @@ input[type=file]::-webkit-file-upload-button { /* chromes and blink button */
 
 @media screen and (max-width: 750px){
 
+  .btn.btn-mobile{
+    display: block !important;
+    top: 3px !important;
+    right: 3px !important;
+    height: 30px !important;
+    line-height: 29px !important;
+    text-align: center !important;
+    padding: 0 !important;
+  }
+
   .lkContainer{
     padding:20px 0;
   }
@@ -7425,4 +7436,30 @@ input[type=file]::-webkit-file-upload-button { /* chromes and blink button */
 #workorder-service-list,
 #workorder-equipment-list{
   margin-left:0px !important;
+}
+
+@media screen and (max-width: 500px){
+
+  .btn.btn-mobile{
+    min-width: 60px;
+    width: 60px;
+  }
+}
+
+.catalogListTab_tr .catalogListTab_cl:first-child{
+  width:280px !important;
+}
+
+.catalogListTab_price{
+  width:110px;
+}
+
+@media screen and (max-width: 750px){
+  .catalogListTab_tr .catalogListTab_cl:first-child{
+    width:100% !important;
+  }
+
+  .catalogListTab_price{
+    width:100% !important;
+  }
 }
