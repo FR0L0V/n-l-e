@@ -6741,6 +6741,7 @@ body.spinner_on {
 }
 
 .availableQuantity{
+  margin-left:40px;
   width:70px;
 }
 
